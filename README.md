@@ -8,7 +8,7 @@
 
 [![Streamlit App](https://img.shields.io/badge/🔴%20Streamlit%20App-Visit%20Now-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://research-assist-rag.streamlit.app)
 [![Grafana Dashboard](https://img.shields.io/badge/📊%20Grafana%20Dashboard-View%20Insights-F46800?style=for-the-badge\&logo=grafana\&logoColor=white)](https://aletbm.grafana.net/public-dashboards/2e048e03ec0944558e6b73739dcdea37?refresh=auto&from=now-6h&to=now&timezone=browser)
-[![Qdrant Cloud](https://img.shields.io/badge/🧠%20Qdrant%20Collection-Explore%20Vectors-FF4C00?style=for-the-badge\&logo=qdrant\&logoColor=white)](https://6740984a-35a5-4d5c-bc6e-b7288f2991c7.us-east4-0.gcp.cloud.qdrant.io:6333/dashboard#/collections?api_key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2Nlc3MiOlt7ImNvbGxlY3Rpb24iOiJhcnRpY2xlcy1yYWctY29zIiwiYWNj)
+[![Qdrant Cloud](https://img.shields.io/badge/🧠%20Qdrant%20Collection-Explore%20Vectors-FF4C00?style=for-the-badge\&logo=qdrant\&logoColor=white)](https://6740984a-35a5-4d5c-bc6e-b7288f2991c7.us-east4-0.gcp.cloud.qdrant.io:6333/dashboard#/collections)
 
 ## Project Description
 
