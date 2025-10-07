@@ -161,25 +161,37 @@ def rag_pipeline(query, categories):
 # -----------------------------------------------------------
 # UI
 # -----------------------------------------------------------
+# Tu título y descripción
 st.title("🔍 RAG Research Assistant")
 st.markdown(
     "Ask a question and explore retrieved academic papers from Arxiv using Gemini + Qdrant."
 )
 
+# Campo de texto para la pregunta
 query = st.text_input("Enter your question:", placeholder="e.g. What is a RAG system?")
-categories_input = st.text_input(
-    "Filter by categories (comma-separated, optional):", placeholder="e.g. cs.CL, cs.AI"
+
+# Selección múltiple de categorías
+ARXIV_CATEGORIES = {
+    "cs.LG": "Machine Learning",
+    "cs.CV": "Computer Vision and Pattern Recognition",
+    "cs.CL": "Computation and Language",
+    "cs.AI": "Artificial Intelligence",
+    "stat.ML": "Statistics",
+    "eess.IV": "Electrical Engineering and Systems Science",
+    "cs.RO": "Robotics",
+    "cs.NE": "Neural and Evolutionary Computing",
+}
+
+categories = st.multiselect(
+    "Select categories (optional):",
+    options=list(ARXIV_CATEGORIES.keys()),
+    format_func=lambda x: f"{x} — {ARXIV_CATEGORIES[x]}",
 )
 
+# Botón de búsqueda
 answer_raw = None
-
 if st.button("Search", type="primary"):
     if query.strip():
-        categories = (
-            [c.strip() for c in categories_input.split(",")]
-            if categories_input
-            else None
-        )
         with st.spinner("Retrieving and generating answer..."):
             answer_raw, retrieved_docs = rag_pipeline(query, categories)
 
@@ -204,7 +216,6 @@ if st.button("Search", type="primary"):
             )
 
             pdf_url = doc.payload["url"].replace("abs", "pdf")
-
             pdf_viewer = f"""
             <iframe src="{pdf_url}" width="100%" height="600px"></iframe>
             <p style='font-size:12px;color:gray;'>Papers retrieved from <a href='https://arxiv.org' target='_blank'>arXiv.org</a></p>
