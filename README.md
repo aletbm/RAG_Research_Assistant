@@ -334,6 +334,8 @@ This does the following:
 
 ### Streamlit App 🌐
 
+https://github.com/user-attachments/assets/9ba32654-301e-43ef-9ee3-25f0db131a6d
+
 The **RAG Research Assistant** Streamlit app provides an interactive interface to explore and interact with academic papers using a Retrieval-Augmented Generation (RAG) system powered by **Qdrant** and **Gemini**.
 
 **Features:**
