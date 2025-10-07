@@ -1,0 +1,53 @@
+services:
+  qdrant:
+    image: qdrant/qdrant
+    container_name: qdrant
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - ~/qdrant_storage:/qdrant/storage
+    restart: always
+
+  prefect:
+    image: prefecthq/prefect:2-latest
+    container_name: prefect
+    command: ["prefect", "server", "start"]
+    ports:
+      - "4200:4200"
+    volumes:
+      - prefect_data:/root/.prefect
+    restart: always
+
+  ingestion:
+    build: .
+    container_name: ingestion-pipeline
+    depends_on:
+      - qdrant
+      - prefect
+    command: >
+      bash -c "sleep 60 && python pipelines/ingestion_pipeline.py"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    restart: "no"
+
+  rag_app:
+    build: .
+    container_name: articles-rag-api
+    depends_on:
+      ingestion:
+        condition: service_completed_successfully
+    env_file:
+      - .env
+    ports:
+      - "8080:8080"
+    volumes:
+      - .:/app
+    restart: always
+
+volumes:
+  prefect_data:
+
+#docker compose up --build

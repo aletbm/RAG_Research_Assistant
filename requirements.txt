@@ -1,0 +1,27 @@
+pandas==2.3.1
+db-dtypes==1.4.3
+arxiv==2.2.0
+numpy==2.2.6
+fastapi==0.118.0
+fastembed==0.7.1
+google-cloud-bigquery==3.38.0
+google-genai==1.32.0
+huggingface-hub==0.34.4
+hf-xet==1.1.9
+pyalex
+python-dotenv==1.1.1
+pyarrow==21.0.0
+prefect==3.4.22
+ollama==0.5.1
+pydantic==2.11.10
+qdrant-client==1.15.1
+requests==2.32.4
+streamlit==1.50.0
+torch==2.8.0+gpu
+torchvision==0.23.0+gpu
+tqdm==4.67.1
+transformers==4.56.0
+uvicorn==0.37.0
+--extra-index-url https://download.pytorch.org/whl/gpu
+
+#pip install -r requirements.txt
