@@ -2,6 +2,16 @@
 
 # 📚 RAG Research Assistant 🤖
 
+![Qdrant Cloud](https://img.shields.io/badge/Qdrant%20Cloud-FF4C00?style=for-the-badge\&logo=qdrant\&logoColor=white)![Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge\&logo=google\&logoColor=white)![arXiv](https://img.shields.io/badge/arXiv-B31B1B?style=for-the-badge\&logo=arxiv\&logoColor=white)![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge\&logo=grafana\&logoColor=white)![Prefect](https://img.shields.io/badge/Prefect-002B5B?style=for-the-badge\&logo=prefect\&logoColor=white)![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge\&logo=pytorch\&logoColor=white)![FastEmbed](https://img.shields.io/badge/FastEmbed-008080?style=for-the-badge\&logo=vectorworks\&logoColor=white)![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge\&logo=fastapi\&logoColor=white)![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge\&logo=docker\&logoColor=white)
+
+### 🌐 Live Project Links
+
+[![Streamlit App](https://img.shields.io/badge/🔴%20Streamlit%20App-Visit%20Now-FF4B4B?style=for-the-badge\&logo=streamlit\&logoColor=white)](https://research-assist-rag.streamlit.app)
+[![Grafana Dashboard](https://img.shields.io/badge/📊%20Grafana%20Dashboard-View%20Insights-F46800?style=for-the-badge\&logo=grafana\&logoColor=white)](https://aletbm.grafana.net/public-dashboards/2e048e03ec0944558e6b73739dcdea37?refresh=auto&from=now-6h&to=now&timezone=browser)
+[![Qdrant Cloud](https://img.shields.io/badge/🧠%20Qdrant%20Collection-Explore%20Vectors-FF4C00?style=for-the-badge\&logo=qdrant\&logoColor=white)](https://cloud.qdrant.io/)
+
+## Project Description
+
 RAG Research Assistant is an intelligent research assistant designed to help users efficiently explore, retrieve, and summarize academic research. The project addresses a common challenge in academia: the **overwhelming volume of scientific literature** 📈 and the difficulty of quickly finding relevant, high-quality information.
 
 The system leverages a **retrieval-augmented generation (RAG)** workflow by combining the following core technologies:
